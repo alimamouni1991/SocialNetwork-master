@@ -60,38 +60,38 @@
     </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-info fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark bg-white fixed-top">
     <div class="container">
-        <img class="logo-dark" src="../assets/img/logo_spm.png" alt="">
+        <img class="logo-dark" src="../assets/img/logo_spm.png" alt="" >
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="{{ path('home') }}">Accueil
+                    <a class="nav-link" href="{{ path('home') }}" style="font-size: 22px; color: black ;font-family: Impact">Accueil
                         <span class="sr-only">(current)</span>
                     </a>
                 </li>
-
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ path('reseaus') }}">Voir les posts</a>
+                    <a class="nav-link" href="{{ path('reseaus') }}" style="font-size: 22px; color: black ;font-family: Impact">
+                        Publications</a>
                 </li>
                 {% if is_granted('ROLE_USER') %}
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ path('post_create') }}">Exprimez vous</a>
+                        <a class="nav-link" href="{{ path('post_create') }}" style="font-size: 22px; color: black ;font-family: Impact">Exprimez vous</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ path('app_logout') }}">Déconnexion</a>
+                        <a class="nav-link" href="{{ path('app_logout') }}" style="font-size: 22px; color: black ;font-family: Impact">Déconnexion</a>
                     </li>
                 {% else %}
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ path('security_login') }}">Connexion</a>
+                        <a class="nav-link" href="{{ path('security_login') }}" style="font-size: 22px; color: black ;font-family: Impact"> Connexion</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ path('register') }}">Créer un compte</a>
+                        <a class="nav-link" href="{{ path('register') }}" style="font-size: 22px; color: black ;font-family: Impact">Créer un compte</a>
                     </li>
                 {% endif %}
                 {% if is_granted('ROLE_ADMIN') %}
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ path('admin') }}">Gestion des Utilisateurs</a>
+                        <a class="nav-link" href="{{ path('admin') }}" style="font-size: 22px; color: black ;font-family: Impact">Gestion des Utilisateurs</a>
                     </li>
 
                 {% endif %}

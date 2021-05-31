@@ -66,4 +66,17 @@ class HomeController extends AbstractController
             'title' => "Bienvenue!"
         ]);
     }
+
+
+    /**
+     * * @Route("/", name="status")
+     *
+     * @return Response
+     */
+    public function status()
+    {
+        return $this->render('reseaus/status.html.twig', [
+            'title' => "Status!"
+        ]);
+    }
 }
