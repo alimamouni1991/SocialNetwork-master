@@ -2041,9 +2041,9 @@ video {
     max-width: 172px;
     max-height: 40px;
     margin: 0 auto;
-    width: auto; 
+    width: auto;
     top: 0;
-  } 
+  }
   .logo img.logo-white {
     display:none;
   }

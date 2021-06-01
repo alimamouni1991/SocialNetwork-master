@@ -68,15 +68,4 @@ class HomeController extends AbstractController
     }
 
 
-    /**
-     * * @Route("/", name="status")
-     *
-     * @return Response
-     */
-    public function status()
-    {
-        return $this->render('reseaus/status.html.twig', [
-            'title' => "Status!"
-        ]);
-    }
 }

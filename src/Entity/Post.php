@@ -24,7 +24,7 @@ class Post
 
     /**
      * @ORM\Column(type="text")
-     * @Assert\Length(min=10, minMessage="Contenu trop court")
+     * @Assert\Length(min=4, minMessage="Contenu trop court")
      *
      * @var string
      */

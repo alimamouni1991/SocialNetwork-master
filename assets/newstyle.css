@@ -1,0 +1,253 @@
+hr.break-small {
+    background: #e5e5e5;
+    border: 0;
+    display: block;
+    height: 2px;
+    margin: 20px 0 35px;
+    width: 60px;
+}
+hr.break-small.break-double.background-white:before, hr.break-small.break-double.background-white:after,
+.primary-color-white hr.break-small.break-double.background-primary:before, .primary-color-white hr.break-small.break-double.background-primary:after {
+    background: #fff;
+}
+hr.break-small.break-double.background-primary:before, hr.break-small.break-double.background-primary:after,
+.primary-color-primary hr.break-small.break-double.background-primary:before, .primary-color-primary hr.break-small.break-double.background-primary:after {
+    background: #C81010;
+}
+.aside-nav.background-dark-hightlight > ul > li > a:hover, .aside-nav.background-dark-hightlight > ul > li.active-item > a:link, .aside-nav.background-dark-hightlight > ul > li.active-item > a:visited,
+.primary-color-dark .aside-nav.background-primary-hightlight > ul > li > a:hover, .primary-color-dark .aside-nav.background-primary-hightlight > ul > li.active-item > a:link, .primary-color-dark .aside-nav.background-primary-hightlight > ul > li.active-item > a:visited {
+    border-color: #002633;
+}
+.background-dark, .background-dark p, a.background-dark, a.background-dark:visited, a.background-dark:link, .background-dark a, .background-dark a:link, .background-dark a:visited, .background-dark a:hover, .background-dark a:active,
+.primary-color-dark .background-primary, .primary-color-dark .background-primary p, .primary-color-dark a.background-primary, .primary-color-dark a.background-primary:visited, .primary-color-dark a.background-primary:link, .primary-color-dark a.background-primary:visited, .primary-color-dark .background-primary a, .primary-color-dark .background-primary a:link, .primary-color-dark .background-primary a:visited, .primary-color-dark .background-primary a:hover, .primary-color-dark .background-primary a:active {
+    color: #7697A2;
+}
+.background-white h1, .background-white h2, .background-white h3, .background-white h4, .background-white h5, .background-white h6,
+.background-white .h1, .background-white .h2, .background-white .h3, .background-white .h4, .background-white .h5, .background-white .h6,
+.primary-color-white .background-primary h1, .primary-color-white .background-primary h2, .primary-color-white .background-primary h3, .primary-color-white .background-primary h4, .primary-color-white .background-primary h5, .primary-color-white .background-primary h6,
+.primary-color-white .background-primary .h1, .primary-color-white .background-primary .h2, .primary-color-white .background-primary .h3, .primary-color-white .background-primary .h4, .primary-color-white .background-primary .h5, .primary-color-white .background-primary .h6 {
+    color: #002633;
+}
+.image-hover-overlay-content *,
+.background-primary, .background-primary p, a.background-primary, a.background-primary:visited, a.background-primary:link, .background-primary a, .background-primary a:link, .background-primary a:visited, .background-primary a:hover, .background-primary a:active,
+.primary-color-primary .background-primary, .primary-color-primary .background-primary p, .primary-color-primary a.background-primary, .primary-color-primary a.background-primary:visited, .primary-color-primary a.background-primary:link, .primary-color-primary .background-primary a, .primary-color-primary .background-primary a:link, .primary-color-primary .background-primary a:visited, .primary-color-primary .background-primary a:hover, .primary-color-primary .background-primary a:active {
+    color: rgba(255,255,255, 0.75);
+}
+.background-dark h1, .background-dark h2, .background-dark h3, .background-dark h4, .background-dark h5, .background-dark h6,
+.background-dark .h1, .background-dark .h2, .background-dark .h3, .background-dark .h4, .background-dark .h5, .background-dark .h6,
+.primary-color-dark .background-primary h1, .primary-color-dark .background-primary h2, .primary-color-dark .background-primary h3, .primary-color-dark .background-primary h4, .primary-color-dark .background-primary h5, .primary-color-dark .background-primary h6,
+.primary-color-dark .background-primary .h1, .primary-color-dark .background-primary .h2, .primary-color-dark .background-primary .h3, .primary-color-dark .background-primary .h4, .primary-color-dark .background-primary .h5, .primary-color-dark .background-primary .h6,
+.background-primary h1, .background-primary h2, .background-primary h3, .background-primary h4, .background-primary h5, .background-primary h6,
+.background-primary .h1, .background-primary .h2, .background-primary .h3, .background-primary .h4, .background-primary .h5, .background-primary .h6,
+.primary-color-primary .background-primary h1, .primary-color-primary .background-primary h2, .primary-color-primary .background-primary h3, .primary-color-primary .background-primary h4, .primary-color-primary .background-primary h5, .primary-color-primary .background-primary h6,
+.primary-color-primary .background-primary .h1, .primary-color-primary .background-primary .h2, .primary-color-primary .background-primary .h3, .primary-color-primary .background-primary .h4, .primary-color-primary .background-primary .h5, .primary-color-primary .background-primary .h6 {
+    color: #fff;
+}
+
+
+/* Background Colors */
+.background-white, .primary-color-white .background-primary {
+    background-color: #fff !important;
+}
+.background-primary, .primary-color-primary .background-primary {
+    background-color: #002633  !important;
+}
+.background-dark, .primary-color-dark .background-primary {
+    background-color: #002633 !important;
+}
+/* Background Opacity */
+.background-white.background-transparent, .primary-color-white .background-primary.background-transparent {
+    background-color: rgba(255, 255, 255, 0.85) !important;
+}
+.background-primary.background-transparent, .primary-color-primary .background-primary.background-transparent {
+    background-color: rgba(200, 16, 16, 0.85) !important;
+}
+.background-dark.background-transparent, .primary-color-dark .background-primary.background-transparent {
+    background-color: rgba(0, 38, 51, 0.85) !important;
+}
+
+.background-white-hightlight a.tab-label.active-btn, .background-white-hightlight a.tab-label:hover,
+.primary-color-white .background-primary-hightlight a.tab-label.active-btn, .primary-color-white .background-primary-hightlight a.tab-label:hover {
+    background: #fff none repeat scroll 0 0;
+    color: #002633;
+}
+.background-primary-hightlight a.tab-label.active-btn, .background-primary-hightlight a.tab-label:hover,
+.primary-color-primary .background-primary-hightlight a.tab-label.active-btn, .primary-color-primary .background-primary-hightlight a.tab-label:hover {
+    background: #C81010 none repeat scroll 0 0;
+    color: #fff;
+}
+.background-dark-hightlight a.tab-label.active-btn, .background-dark-hightlight a.tab-label:hover,
+.primary-color-dark .background-primary-hightlight a.tab-label.active-btn, .primary-color-dark .background-primary-hightlight a.tab-label:hover {
+    background: #002633 none repeat scroll 0 0;
+    color: #fff;
+}
+
+hr.break-small.break-center {
+    margin: 20px auto 35px;
+}
+hr.break-small.break-center.break-double:before {
+    margin: 5px auto 0;
+}
+hr.break.break-small.break-center.break-double:after {
+    margin: 4px auto 35px;
+}
+.text-size-50, .text-l-size-50 {
+    font-size: 50px !important;
+    line-height: 1.4;
+}
+.text-center {
+    text-align: center;
+}
+
+.section  {
+    padding: 0rem 1.25rem;
+}
+.section-small-padding  {
+    padding: 2.5rem 1.25rem;
+}
+.section-top-padding  {
+    padding-top: 6rem;
+}
+.section-top-small-padding  {
+    padding-top: 2.5rem;
+}
+
+
+a.tab-label, a.tab-label:link, a.tab-label:visited,
+.background-white a.tab-label, .background-white a.tab-label:link, .background-white a.tab-label:visited, .background-white a.tab-label:hover {
+    background: #002633 none repeat scroll 0 0;
+    color: rgba(255,255,255, 0.75);
+}
+a.tab-label, a.tab-label:link, a.tab-label:visited, a.tab-label:hover,
+.background-white a.tab-label, .background-white a.tab-label:link, .background-white a.tab-label:visited, .background-white a.tab-label:hover {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    color: #002633;
+}
+.background-white-hightlight a.tab-label.active-btn, .background-white-hightlight a.tab-label:hover,
+.primary-color-white .background-primary-hightlight a.tab-label.active-btn, .primary-color-white .background-primary-hightlight a.tab-label:hover {
+    background: #fff none repeat scroll 0 0;
+    color: #002633;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.top-nav li a, .background-white .top-nav li a {
+    background: #002633 none repeat scroll 0 0;
+    color: #fff;
+    font-size: 1.1em;
+    padding: 1em;
+    text-align: center;
+}
+
+.top-nav li ul li a, .background-white .top-nav li ul li a, .top-nav .active-item li a {
+    background: #fff none repeat scroll 0 0;
+    color: rgba(0,0,0, 0.75);
+}
+
+.top-nav li a, .background-white .top-nav li a {
+    background: none repeat scroll 0 0 #1c3849;
+    font-size: 1.5em;
+    padding: 1.2em 1em;
+}
+.padding-2x {
+    padding: 2.5rem!important;
+}
+.margin-m-bottom {
+    margin-bottom: 1.25rem !important;
+    display: block;
+}
+.margin-m-bottom-0 {
+    margin-bottom: 0 !important;
+    display: block;
+}
+.margin-m-bottom-10 {
+    margin-bottom: 10px !important;
+    display: block;
+}
+.margin-m-bottom-15 {
+    margin-bottom: 15px !important;
+    display: block;
+}
+.margin-m-bottom-20 {
+    margin-bottom: 20px !important;
+    display: block;
+}
+.margin-m-bottom-30 {
+    margin-bottom: 30px !important;
+    display: block;
+}
+.margin-m-bottom-40 {
+    margin-bottom: 40px !important;
+    display: block;
+}
+.margin-m-bottom-50 {
+    margin-bottom: 50px !important;
+    display: block;
+}
+.margin-m-bottom-60 {
+    margin-bottom: 60px !important;
+    display: block;
+}
+.margin-m-bottom-70 {
+    margin-bottom: 70px !important;
+    display: block;
+}
+.margin-m-bottom-80 {
+    margin-bottom: 80px !important;
+    display: block;
+}
+.text-line-height-1 {
+    line-height: 1;
+}
+.full-width > .line {
+    padding: 0 1.875rem;
+}
+.tab-nav.line {
+    display: table;
+    padding-bottom: 1.25rem;
+}
+
+.text-white, .text-white *, .primary-color-white .text-primary, .primary-color-white .text-primary * {
+    color: #fff !important;
+}
+.text-primary, .text-primary *, .primary-color-primary .text-primary, .primary-color-primary .text-primary * {
+    color: #C81010 !important;
+}
+.text-dark, .text-dark *, .primary-color-dark .text-primary, .primary-color-dark .text-primary * {
+    color: #002633 !important;
+}
+.text-white-hover, .text-primary-hover, .text-dark-hover {
+    transition: color 0.20s linear 0s;
+    -o-transition: color 0.20s linear 0s;
+    -ms-transition: color 0.20s linear 0s;
+    -moz-transition: color 0.20s linear 0s;
+    -webkit-transition: color 0.20s linear 0s;
+}
+.text-white-hover:hover, .primary-color-white .text-primary-hover:hover {
+    color: #fff !important;
+}
+.text-primary-hover:hover, .primary-color-primary .text-primary-hover:hover {
+    color: #C81010 !important;
+}
+.text-dark-hover:hover, .primary-color-dark .text-primary-hover:hover {
+    color: #002633 !important;
+}
+.text-line-height-1 {
+    line-height: 1;
+}
+nav.background-transparent.background-transparent-hightlight .s-12.l-2 {
+    width: 100%;
+}
