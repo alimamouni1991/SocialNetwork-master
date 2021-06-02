@@ -10,7 +10,7 @@
     </div>
     {% for post in posts %}
         <div class="news card col-lg-7 col-sm-12">
-            <img class="card-img-top" src="{{ '/files/' ~ post.imgFileName }}" alt="Card image cap">
+{#            <img class="card-img-top" src="{{ '/files/' ~ post.imgFileName }}" alt="Card image cap">#}
             <div class="text-center card-header">
                 <a href="{{ path('show_user', {'id': post.user.id }) }}"><h3 class="user text-primary"><i
                                 class="fas fa-user-tie user"></i> {{ post.user.alias }}</h3></a>

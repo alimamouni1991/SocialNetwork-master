@@ -6,7 +6,7 @@
 
     <article class="news showPost">
         <div class="card">
-            <img class="card-img-top" src="{{ '/files/' ~ post.imgFileName }}" alt="Card image cap">
+           {# <img class="card-img-top" src="{{ '/files/' ~ post.imgFileName }}" alt="Card image cap">#}
             <div class="container text-center">
             </div>
             <h2 class="card-title dateArt metadata">
@@ -39,7 +39,6 @@
                     <div class="col-3">
                         <span class="badge-light text-black"><i class="fas fa-user-secret"></i> {{ comment.user.alias }}</span>
                         <small class="small text-muted">{{ comment.createdAt | date('d/m/Y à H:i') }}</small>
-
                     </div>
                     <div class="col comment font-weight-light">
                         {{ comment.content | raw }}

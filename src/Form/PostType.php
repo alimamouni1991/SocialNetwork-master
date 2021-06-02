@@ -59,8 +59,10 @@ class PostType extends AbstractType
             ->add(
                 'tags',
                 TextType::class,
+
                 [
-                'attr' => ['class' => 'dynchoice'],
+
+                    'label' => 'Tag'
                 ]
             );
 
