@@ -69,6 +69,7 @@ class PostController extends AbstractController
 
         if ($form->isSubmitted() && $form->isValid()) {
             $imgFile = $form['img']->getData();
+            
 
             if ($imgFile) {
                 $post->setImgFilename($fileUploader->upload($imgFile));

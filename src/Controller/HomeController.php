@@ -19,7 +19,7 @@ use Knp\Component\Pager\PaginatorInterface;
 class HomeController extends AbstractController
 {
     /**
-     * * @Route("/reseaus", name="reseaus")
+     * * @Route("/reseaus/{_locale}", name="reseaus")
      *
      * @param PostRepository $repo
      * @param Request $request
@@ -28,7 +28,7 @@ class HomeController extends AbstractController
      */
     public function index(PostRepository $repo, Request $request, PaginatorInterface $paginator, TagRepository $repoTag)
     {
-
+dump($request->getLocale());
         $form = $this->createForm(PostsSearchType::class)->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {

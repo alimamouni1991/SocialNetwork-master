@@ -31,13 +31,16 @@
                   {#  <td class="text-center"> <span class="badge badge-primary rounded">{{ad.bookings | length}}</span></td>
                     <td class="text-center"> <span class="badge badge-primary rounded">{{ad.avgRatings | number_format(1, ',', ' ')}} </span></td>
                   #}  <td>
-                        <a href="{{ path('admin_posts_edit', {'id': post.id}) }}" class="btn btn-primary"><i class="fas fa-edit"></i></a>
-                        <a href="#" class="btn btn-danger"><i class="fas fa-trash"></i></a>
-                    </td>
+                       <div style="float: right;" >  <a href="{{ path('admin_posts_edit', {'id': post.id}) }}" class="text-primary btn text-right" >Modifier</a></div>
+                        {# <a href="{{ path('post_delete' , {'id': post.id})}}" class="btn btn-danger"><i class="fas fa-trash"></i></a> #}
+                {% include "reseaus/delete_form.html.twig" %} 
+                   </td>
                 </tr>
             {% endfor %}
             </tbody>
         </table>
         {% endif %}
     </div>
+ 
+
 {% endblock %}

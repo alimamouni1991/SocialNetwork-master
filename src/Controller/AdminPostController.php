@@ -14,6 +14,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use App\Repository\PostRepository;
 use Knp\Component\Pager\PaginatorInterface;
+use App\Service\FileUploader;
 
 /**
  * Class HomeController
@@ -42,23 +43,36 @@ class AdminPostController extends AbstractController
      * @param Post $post
      * @return Response
      */
-    public function edit(Post $post, Request $request,  EntityManagerInterface $entityManager ){
+    public function edit(Post $post, Request $request,  EntityManagerInterface $entityManager , FileUploader $fileUploader){
+        $this->denyAccessUnlessGranted('edit', $post);
+
         $form = $this->createForm(PostType::class, $post);
 
         $form->handleRequest($request);
 
         if($form->isSubmitted() && $form->isValid()){
+            $imgFile = $form['img']->getData();
+
+            if ($imgFile) {
+                $post->setImgFilename($fileUploader->upload($imgFile));
+            }
+
             $entityManager->persist($post);
             $entityManager->flush();
 
             $this->addFlash(
                 'success',
-                "l'annonce <strong>{$post->getContent()}</strong> a bien été enregistrée !"
+                "la publication  <strong>{$post->getContent()}</strong> a bien été enregistrée !"
             );
+            return $this->redirectToRoute('post_show', ['id' => $post->getId()]);
         }
         return $this->render('admin/post/edit.html.twig', [
             'post' => $post,
             'form' => $form->createView()
         ]);
     }
+
+ 
+
+
 }

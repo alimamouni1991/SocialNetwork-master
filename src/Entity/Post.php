@@ -21,7 +21,7 @@ class Post
      */
     private $id;
 
-
+    
     /**
      * @ORM\Column(type="text")
      * @Assert\Length(min=4, minMessage="Contenu trop court")
@@ -88,7 +88,8 @@ class Post
      */
     public function __construct()
     {
-        $this->imgFilename = "nothing.png";
+        $this->imgFilename = "logo_smp.png";
+
         $this->createdAt = new \DateTime();
         $this->comments = new ArrayCollection();
         $this->loves = new ArrayCollection();
@@ -167,6 +168,18 @@ class Post
     public function setImgFilename($imgFilename)
     {
         $this->imgFilename = $imgFilename;
+
+        return $this;
+    }
+
+    public function getDocFilename()
+    {
+        return $this->docFilename;
+    }
+
+    public function setDocFilename($docFilename)
+    {
+        $this->docFilename = $docFilename;
 
         return $this;
     }
